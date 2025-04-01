@@ -8,7 +8,7 @@ function mergeSort(unsortedArray){
     const low = 1;
     const high = unsortedArray.length;
 
-    if(low === high) return unsortedArray;
+    if(unsortedArray.length <= 1) return unsortedArray;
 
     let midpoint;
     if(high%2 === 0){midpoint = high/2;}
@@ -53,4 +53,6 @@ function merge(arrayA, arrayB){
             itemsInMergedArray--;
         }
     }
+
+    return mergedArray;
 }
